@@ -1,0 +1,41 @@
+@keyframes move {
+    0% {
+        transform: rotateZ(0deg)
+    }
+    20% {
+        transform: rotateZ(-4deg)
+    }
+    40% {
+        transform: rotateZ(2deg)
+    }
+    60% {
+        transform: rotateZ(-4deg)
+    }
+    80% {
+        transform: rotateZ(1deg);
+    }
+    90% {
+        transform: rotateZ(-1deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.ComponentBase {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.shake{
+    animation: move 2s infinite 2s;
+}
+
+@keyframes up {
+    50% {
+        top: 50px;
+    }
+}
+.back {
+    animation: up 1.5s infinite 1.5s;
+}

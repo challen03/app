@@ -1,0 +1,25 @@
+.ComponentPolyLine {
+    canvas {
+      position: absolute;
+      //缩小一半，恢复正常大小;
+      width: 100%;
+      height: 100%;
+    }
+    .text {
+      transition: all 1s ease-in-out 1.2s;
+      opacity: 0;
+    }
+}
+
+.loadComponent {
+  .text {
+    opacity: 1;
+  }
+}
+
+
+.leaveComponent {
+  .text {
+    opacity: 0;
+  }
+}

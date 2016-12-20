@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.ComponentBar {
+    .row {
+        height: 25px;
+        margin-bottom: 40px;
+        &:first-of-type {
+            margin-top: 10px;
+        }
+        .name {
+            float: left;
+            width: 80px;
+            text-align: left;
+            height: 20px;
+            line-height: 20px;
+        }
+        .load {
+            float: left;
+            height: 20px;
+            .loadInner {
+                width: 0%;
+                height: 20px;
+                transition: all 1s ease-in 0.8s;
+            }
+        }
+        .per {
+            float: left;
+            opacity: 0;
+            width: 20px;
+            height: 25px;
+            line-height: 25px;
+           
+        }
+    }
+}
+
+.loadComponent {
+    .row {
+        .load {
+            .loadInner {
+                width: 100%;
+            }
+        }
+        .per {
+            opacity: 1;
+             transition: all 1s ease-in 1.8s;
+        }
+    }
+}
+
+.leaveComponent {
+    .row {
+        .load {
+            .loadInner {
+                width: 0%;
+            }
+        }
+        .per {
+            opacity: 0;
+             transition: all 1s ease-in 1.8s;
+        }
+    }
+}
